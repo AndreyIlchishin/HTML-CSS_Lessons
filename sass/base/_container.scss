@@ -1,0 +1,6 @@
+.container {
+  width: $conrainer-width;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include center-block;
+}

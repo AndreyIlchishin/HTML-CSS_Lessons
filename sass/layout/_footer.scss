@@ -1,0 +1,80 @@
+/* FOOTER */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  &__logo {
+    padding-bottom: 20px;
+    color: #fff;
+  }
+}
+
+.footer-container {
+  display: flex;
+  &__address-wrap {
+    margin-right: 70px;
+  }
+  &__social-wrap {
+    padding-top: 12px;
+    margin-right: 94px;
+  }
+  &__subscribe-wrap {
+    padding-top: 12px;
+    &__subtitle {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__link {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:not(:last-child) {
+      padding-bottom: 9px;
+    }
+    &--location {
+      color: #fff;
+    }
+  }
+}
+
+.subtitle-call-to-action {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer .input.email::placeholder {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .input.email {
+  background-color: rgba(255, 255, 255, 0);
+}
+.footer .button.email {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: #2196f3;
+}

@@ -1,0 +1,28 @@
+/* CLIENTS SECTION */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.clisents-list {
+  display: flex;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    min-width: 170px;
+    min-height: 90px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+  }
+}
+/* END CLIENTS SECTION */

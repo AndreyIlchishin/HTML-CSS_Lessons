@@ -1,0 +1,22 @@
+.social-list {
+  display: flex;
+  margin-top: 16px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__image {
+    padding: 12px;
+
+    border-radius: 50%;
+    &--dark-theme {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
+}
