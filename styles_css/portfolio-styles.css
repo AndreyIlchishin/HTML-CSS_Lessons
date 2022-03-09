@@ -80,7 +80,7 @@ h2 {
   margin: 0 86px 0 0;
 }
 .link-logo > .first {
-  color: #2196f3;
+  color: $secondary-color;
 }
 .menu.list {
   display: flex;
@@ -102,8 +102,8 @@ h2 {
   border-bottom: 4px solid transparent;
 }
 .menu.list .link:hover {
-  color: #2196f3;
-  border-bottom: 4px solid #2196f3;
+  color: $secondary-color;
+  border-bottom: 4px solid $secondary-color;
   border-radius: 2px;
 }
 .nav-address,
@@ -117,7 +117,7 @@ h2 {
   line-height: 1.172;
   letter-spacing: 0.02em;
   text-align: left;
-  color: #757575;
+  color: $descriptions-color;
 }
 .header .nav-address .link + .link {
   margin-left: 50px;
@@ -125,14 +125,12 @@ h2 {
 
 .header .link:hover,
 .header .link:focus {
-  color: #2196f3;
+  color: $secondary-color;
 }
 .nav-address .adress-icon {
   margin-right: 10px;
 }
 /* END HEADER */
-
-
 
 /* FOOTER */
 .footer {
@@ -212,10 +210,9 @@ h2 {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #fff;
-  background-color: #2196f3;
+  background-color: $secondary-color;
 }
 /* END FOOTER */
-
 
 /* ?TEST */
 /* ?TEST */

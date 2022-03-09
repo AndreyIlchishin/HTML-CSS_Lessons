@@ -1,7 +1,10 @@
-/* QUALITES SECTION */
 .qualities-section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &__title {
+    @extend .visually-hidden;
+  }
 }
 .qualities-list {
   display: flex;
@@ -17,13 +20,25 @@
     align-items: center;
 
     height: 120px;
-    background-color: #f5f4fa;
+    background-color: $secondary-bg-color;
     border-radius: 4px;
-    &:hover,
-    &:focus {
-      background-color: #f0edfd;
-    }
+
+    transition: background-color $cubic-bezier 250ms;
   }
+
+  &__item:hover &__img-container,
+  &__item:focus &__img-container {
+    background-color: $secondary-color;
+  }
+
+  &__img {
+    transition: all $cubic-bezier 250ms;
+  }
+  &__item:hover &__img {
+    --color1: #fff;
+    --color2: #fff;
+  }
+
   &__sub-title {
     margin-top: 30px;
   }
@@ -34,21 +49,6 @@
     font-weight: 400;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $descriptions-color;
   }
 }
-
-// .qualities.section h3 {
-//   margin-top: 30px;
-
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 1.172;
-//   letter-spacing: 0.03em;
-//   text-align: left;
-//   text-transform: uppercase;
-//   color: #212121;
-// }
-
-/* END QUALITES SECTION */

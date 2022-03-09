@@ -1,0 +1,141 @@
+.modal-button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $primiry-white-color;
+  background-color: $secondary-color;
+
+  border: none;
+  border-radius: 4px;
+
+  transition: all $cubic-bezier 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $button-bg-hover-color;
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 13px 28px;
+  min-width: 200px;
+  min-height: 50px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #fff;
+
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px 0px #00000026;
+
+  transition: all $cubic-bezier 250ms;
+
+  &__icon {
+    margin-left: 10px;
+
+    fill: $primiry-white-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-bg-hover-color;
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  background: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: all $cubic-bezier 250ms;
+
+  &__icon {
+    fill: #000;
+  }
+  &:hover &__icon {
+    fill: $secondary-color;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 2px 0px #00000026;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.modal-button-submit {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #fff;
+
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px 0px #00000026;
+
+  transition: all $cubic-bezier 250ms;
+
+  &__icon {
+    margin-left: 10px;
+
+    fill: $primiry-white-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: $button-bg-hover-color;
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
