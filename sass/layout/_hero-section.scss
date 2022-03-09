@@ -2,7 +2,7 @@
 .hero-section {
   text-align: center;
   padding: 200px 0;
-  background-image: linear-gradient($hero-bg-color),
+  background-image: linear-gradient($hero-bg-color, $hero-bg-color),
     url('../../images/main-page/hero-section/hero-section-bg.jpg');
   background-color: $hero-bg-color;
 }
