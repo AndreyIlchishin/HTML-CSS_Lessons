@@ -1,0 +1,38 @@
+/* ABOUT US SECTION */
+.about-us-section {
+  padding-bottom: 94px;
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.about-us-list {
+  display: flex;
+  align-items: flex-start;
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 27px 82px 27px 83px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $about-us-description-bg-color;
+  }
+}
+/* END ABOUT US SECTION */

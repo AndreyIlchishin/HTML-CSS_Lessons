@@ -1,0 +1,39 @@
+$breakpoints: (
+  'phone': 400px,
+  'phone-wide': 480px,
+  'phablet': 560px,
+  'tablet-small': 640px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+  'desktop': 1248px,
+  'desktop-wide': 1440px,
+);
+
+$icons-social: 'instagram', 'twitter', 'facebook', 'linkedin';
+
+$conrainer-width: 1200px;
+
+// Colors
+$primiry-color: #212121;
+$primiry-black-color: #000;
+$primiry-white-color: #fff;
+$secondary-color: #2196f3;
+$descriptions-color: #757575;
+$social-color: #afb1b8;
+$footer-bg-color: #2f303a;
+
+$hero-bg-color: rgba(47, 48, 58, 0.8);
+$secondary-bg-color: #f5f4fa;
+$about-us-description-bg-color: rgba(47, 48, 58, 0.8);
+
+$footer-addres-color: rgba(255, 255, 255, 0.6);
+$footer-socials-bg-color: rgba(255, 255, 255, 0.1);
+$footer-subscribe-input-border-color: rgba(255, 255, 255, 0.3);
+$footer-subscribe-input-palceholder-color: rgba(255, 255, 255, 0.6);
+
+$modal-input-border-color: rgba(33, 33, 33, 0.2);
+
+$portfolio-img-description-bg-color: rgba(33, 150, 243, 0.9);
+
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+$button-bg-hover-color: #188ce8;
