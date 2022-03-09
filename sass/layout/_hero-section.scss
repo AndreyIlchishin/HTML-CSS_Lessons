@@ -2,8 +2,9 @@
 .hero-section {
   text-align: center;
   padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8)), url('../../images/main-page/hero-section/hero-section-bg.jpg');
-  background-color: rgba(47, 48, 58, 0.8);
+  background-image: linear-gradient($hero-bg-color),
+    url('../../images/main-page/hero-section/hero-section-bg.jpg');
+  background-color: $hero-bg-color;
 }
 
 /* END HERO SECTION */

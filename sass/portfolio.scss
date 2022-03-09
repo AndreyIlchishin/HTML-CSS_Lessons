@@ -11,12 +11,14 @@
 
 //components
 @import './components/logo';
-@import './components/modal-btn';
+@import './components/buttons';
 @import './components/social-list';
-@import './components/modal';
+@import './components/backdrop';
+@import './components/modal-form';
 @import './components/title';
 
 //layout
 @import './layout/header';
-@import './layout/portfolio-section';
+@import './layout/portfolio-filter';
+@import './layout/portfolio-cards';
 @import './layout/footer';
