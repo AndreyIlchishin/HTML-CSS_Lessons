@@ -1,17 +1,17 @@
 /* HERO SECTION */
 .hero-section {
-  text-align: center;
-  padding: 118px 0;
-  background-image: linear-gradient($hero-bg-color),
-    url('../../images/main-page/hero-section/hero-section-bg.jpg');
-  background-color: $hero-bg-color;
+    text-align: center;
+    padding: 118px 0;
+    background-image: linear-gradient($hero-bg-color),
+        url('../images/main-page/hero-section/hero-section-bg.jpg');
+    background-color: $hero-bg-color;
 
-  @media screen and(min-width:768px) {
-  }
+    @media screen and(min-width:768px) {
+    }
 
-  @media screen and(min-width:1140px) {
-    padding: 200px 0;
-  }
+    @media screen and(min-width:1140px) {
+        padding: 200px 0;
+    }
 }
 
 /* END HERO SECTION */

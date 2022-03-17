@@ -1374,8 +1374,8 @@ body.modal-open {
 .hero-section {
   text-align: center;
   padding: 118px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8))), url("../../images/main-page/hero-section/hero-section-bg.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8)), url("../../images/main-page/hero-section/hero-section-bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8))), url("../images/main-page/hero-section/hero-section-bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8)), url("../images/main-page/hero-section/hero-section-bg.jpg");
   background-color: rgba(47, 48, 58, 0.8);
 }
 
