@@ -1,141 +1,211 @@
 .modal-button {
-  display: inline-block;
-  padding: 10px 32px;
-  margin-top: 30px;
-  border-radius: 4px;
+    display: inline-block;
+    padding: 10px 32px;
+    margin-top: 30px;
+    border-radius: 4px;
 
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: $primiry-white-color;
-  background-color: $secondary-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $primiry-white-color;
+    background-color: $secondary-color;
 
-  border: none;
-  border-radius: 4px;
+    border: none;
+    border-radius: 4px;
 
-  transition: all $cubic-bezier 250ms;
+    transition: all $cubic-bezier 250ms;
 
-  &:hover,
-  &:focus {
-    background-color: $button-bg-hover-color;
-    box-shadow: 0px 4px 4px 0px #00000026;
-  }
+    &:active {
+        transform: scale(0.98);
+    }
 
-  &:active {
-    transform: scale(0.98);
-  }
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        &:hover,
+        &:focus {
+            background-color: $button-bg-hover-color;
+            box-shadow: 0px 4px 4px 0px #00000026;
+        }
+    }
 }
 
 .subscribe-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  padding: 13px 28px;
-  min-width: 200px;
-  min-height: 50px;
+    padding: 13px 28px;
+    width: 200px;
+    min-height: 50px;
 
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #fff;
 
-  background-color: $secondary-color;
-  border: none;
-  border-radius: 4px;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 4px;
 
-  box-shadow: 0px 4px 4px 0px #00000026;
-
-  transition: all $cubic-bezier 250ms;
-
-  &__icon {
-    margin-left: 10px;
-
-    fill: $primiry-white-color;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $button-bg-hover-color;
     box-shadow: 0px 4px 4px 0px #00000026;
-  }
 
-  &:active {
-    transform: scale(0.98);
-  }
+    transition: all $cubic-bezier 250ms;
+
+    &__icon {
+        margin-left: 10px;
+
+        fill: $primiry-white-color;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        &:hover,
+        &:focus {
+            background-color: $button-bg-hover-color;
+            box-shadow: 0px 4px 4px 0px #00000026;
+        }
+    }
 }
 
 .modal-close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 
-  background: none;
+    background: none;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 
-  transition: all $cubic-bezier 250ms;
+    transition: all $cubic-bezier 250ms;
 
-  &__icon {
-    fill: #000;
-  }
-  &:hover &__icon {
-    fill: $secondary-color;
-  }
+    &__icon {
+        fill: #000;
+    }
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 0px 2px 0px #00000026;
-  }
+    &:active,
+    &:active &__icon {
+        transform: scale(0.98);
 
-  &:active {
-    transform: scale(0.98);
-  }
+        fill: $secondary-color;
+    }
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        &:hover &__icon {
+            fill: $secondary-color;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 0px 2px 0px #00000026;
+        }
+    }
 }
 
 .modal-button-submit {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 
-  min-width: 200px;
-  min-height: 50px;
+    min-width: 200px;
+    min-height: 50px;
 
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #fff;
 
-  background-color: $secondary-color;
-  border: none;
-  border-radius: 4px;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 4px;
 
-  box-shadow: 0px 4px 4px 0px #00000026;
-
-  transition: all $cubic-bezier 250ms;
-
-  &__icon {
-    margin-left: 10px;
-
-    fill: $primiry-white-color;
-  }
-  &:hover,
-  &:focus {
-    background-color: $button-bg-hover-color;
     box-shadow: 0px 4px 4px 0px #00000026;
-  }
-  &:active {
-    transform: scale(0.98);
-  }
+
+    transition: all $cubic-bezier 250ms;
+
+    &__icon {
+        margin-left: 10px;
+
+        fill: $primiry-white-color;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        &:hover,
+        &:focus {
+            background-color: $button-bg-hover-color;
+            box-shadow: 0px 4px 4px 0px #00000026;
+        }
+    }
+}
+
+.menu-button {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+
+    background: none;
+    border: none;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &__icon-open {
+        display: block;
+        fill: $primiry-color;
+
+        transition: all $cubic-bezier 250ms;
+    }
+
+    &__icon:active &__icon-open {
+        fill: #2196f3;
+    }
+
+    &.is-open &__icon-open {
+        display: none;
+    }
+
+    &__icon-close {
+        display: none;
+
+        fill: $primiry-color;
+
+        transition: all $cubic-bezier 250ms;
+    }
+
+    &.is-open &__icon-close {
+        display: block;
+    }
+
+    &__icon:active &__icon-close {
+        fill: #2196f3;
+    }
 }

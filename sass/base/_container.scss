@@ -1,5 +1,7 @@
 .container {
-  width: $conrainer-width;
+  min-width: 400px;
+  max-width: $conrainer-width;
+
   padding-left: 15px;
   padding-right: 15px;
   @include center-block;

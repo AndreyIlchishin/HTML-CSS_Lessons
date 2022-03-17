@@ -1,43 +1,70 @@
 .backdrop {
-  display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity $cubic-bezier 250ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity $cubic-bezier 250ms;
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+
+    overflow-y: scroll;
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        display: block;
+    }
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity $cubic-bezier 250ms;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity $cubic-bezier 250ms;
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-  transition: all $cubic-bezier 250ms;
+    
+    transition: all $cubic-bezier 250ms;
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: relative;
 
-  min-width: 528px;
-  min-height: 581px;
+    max-width: 528px;
+    min-width: 370px;
+    min-height: 581px;
 
-  background-color: #fff;
+    background-color: #fff;
 
-  border-radius: 4px;
-  transition: all $cubic-bezier 250ms;
+    border-radius: 4px;
+    transition: all $cubic-bezier 250ms;
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1140px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
