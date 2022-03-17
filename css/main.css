@@ -1086,6 +1086,7 @@ body.modal-open {
   width: 100%;
   top: 102%;
   left: 0;
+  z-index: 20;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
