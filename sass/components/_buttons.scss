@@ -14,7 +14,9 @@
     border: none;
     border-radius: 4px;
 
-    transition: all $cubic-bezier 250ms;
+    @media screen and(min-width:1140px) {
+        transition: all $cubic-bezier 250ms;
+    }
 
     &:active {
         transform: scale(0.98);
@@ -53,7 +55,9 @@
 
     box-shadow: 0px 4px 4px 0px #00000026;
 
-    transition: all $cubic-bezier 250ms;
+    @media screen and(min-width:1140px) {
+        transition: all $cubic-bezier 250ms;
+    }
 
     &__icon {
         margin-left: 10px;
@@ -94,7 +98,9 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    transition: all $cubic-bezier 250ms;
+    @media screen and(min-width:1140px) {
+        transition: all $cubic-bezier 250ms;
+    }
 
     &__icon {
         fill: #000;
@@ -142,7 +148,9 @@
 
     box-shadow: 0px 4px 4px 0px #00000026;
 
-    transition: all $cubic-bezier 250ms;
+    @media screen and(min-width:1140px) {
+        transition: all $cubic-bezier 250ms;
+    }
 
     &__icon {
         margin-left: 10px;

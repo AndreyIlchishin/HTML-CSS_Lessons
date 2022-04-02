@@ -126,13 +126,12 @@
         letter-spacing: 0.03em;
         color: $footer-addres-color;
 
-        transition: all $cubic-bezier 250ms;
-
         @media screen and(min-width:768px) {
             display: block;
         }
 
         @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
         }
         &:not(:last-child) {
             padding-bottom: 9px;
@@ -197,4 +196,5 @@
             color: $footer-subscribe-input-palceholder-color;
         }
     }
+    
 }

@@ -35,10 +35,11 @@
         border: 1px solid $modal-input-border-color;
         border-radius: 4px;
 
-        transition: all $cubic-bezier 250ms;
-
         &:focus {
             outline: 1px solid $secondary-color;
+        }
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
         }
     }
 
@@ -53,7 +54,9 @@
 
         transform: translateX(42px) translateY(-50%);
 
-        transition: all $cubic-bezier 250ms;
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
+        }
     }
 
     &__input:focus ~ &__label {
@@ -73,7 +76,9 @@
 
         fill: $primiry-color;
 
-        transition: all $cubic-bezier 250ms;
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
+        }
     }
 
     &__input:focus ~ &__input-icon {
@@ -94,7 +99,9 @@
         border: 1px solid $modal-input-border-color;
         border-radius: 4px;
 
-        transition: all $cubic-bezier 250ms;
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
+        }
 
         &:focus {
             outline: 1px solid $secondary-color;
@@ -110,7 +117,9 @@
         letter-spacing: 0.01em;
         color: $descriptions-color;
 
-        transition: all $cubic-bezier 250ms;
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
+        }
     }
 
     &__textarea:focus ~ &__textarea-label {

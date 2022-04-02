@@ -1,53 +1,57 @@
 .social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__item {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: transparent;
-    border-radius: 50%;
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    transition: background-color $cubic-bezier 250ms;
+        background-color: transparent;
+        border-radius: 50%;
 
-    &:not(:last-child) {
-      margin-right: 10px;
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+        }
     }
 
-    &:hover {
-      background-color: $secondary-color;
+    &--dark-theme &__item {
+        background-color: rgba(255, 255, 255, 0.1);
+        &:hover {
+            background-color: $secondary-color;
+        }
     }
-  }
 
-  &--dark-theme &__item {
-    background-color: rgba(255, 255, 255, 0.1);
-    &:hover {
-      background-color: $secondary-color;
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
     }
-  }
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__icon {
+        fill: $social-color;
 
-    width: 44px;
-    height: 44px;
-  }
+        @media screen and(min-width:1140px) {
+            transition: all $cubic-bezier 250ms;
+        }
+    }
+    &__item:hover &__icon {
+        fill: $primiry-white-color;
+    }
 
-  &__icon {
-    fill: $social-color;
-
-    transition: fill $cubic-bezier 250ms;
-  }
-  &__item:hover &__icon {
-    fill: $primiry-white-color;
-  }
-
-  &--dark-theme &__icon {
-    fill: $primiry-white-color;
-  }
+    &--dark-theme &__icon {
+        fill: $primiry-white-color;
+    }
 }
